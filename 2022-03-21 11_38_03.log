@@ -1,0 +1,218 @@
+version: v0.21.1
+
+config:
+{
+  "common_settings": {
+    "scan_interval": "6h",
+    "run_scan_at_start_up": true,
+    "movie_paths": [
+      "/media/movie"
+    ],
+    "series_paths": [
+      "/media/tv"
+    ]
+  },
+  "advanced_settings": {
+    "proxy_settings": {
+      "use_http_proxy": false,
+      "http_proxy_address": ""
+    },
+    "debug_mode": false,
+    "save_full_season_tmp_subtitles": false,
+    "sub_type_priority": 0,
+    "sub_name_formatter": 1,
+    "save_multi_sub": false,
+    "custom_video_exts": [],
+    "fix_time_line": true,
+    "topic": 1
+  },
+  "emby_settings": {
+    "enable": false,
+    "max_request_video_number": 500,
+    "skip_watched": false,
+    "movie_paths_mapping": {
+      "/media/movie": ""
+    },
+    "series_paths_mapping": {
+      "/media/tv": ""
+    }
+  },
+  "developer_settings": {
+    "enable": false,
+    "bark_server_address": ""
+  },
+  "timeline_fixer_settings": {
+    "max_offset_time": 120,
+    "min_offset": 0.1
+  },
+  "experimental_function": {
+    "auto_change_sub_encode": {
+      "enable": false,
+      "des_encode_type": 0
+    }
+  }
+}
+
+log:
+[INFO]: 2022-03-21 11:38:03 - PreDownloadProcess.Init() Start...
+[WARNING]: 2022-03-21 11:38:04 - DownFile.GetFileName is string.empty https://cdn.jsdelivr.net/gh/allanpk716/SomeThingsStatic/c31ViaG5Q.txt
+[INFO]: 2022-03-21 11:38:04 - GetCode 2022-03-21 390146
+[INFO]: 2022-03-21 11:38:04 - ClearRodTmpRootFolder Done
+[INFO]: 2022-03-21 11:38:04 - PreDownloadProcess.Init() End
+[INFO]: 2022-03-21 11:38:04 - PreDownloadProcess.Check() Start...
+[INFO]: 2022-03-21 11:38:04 - UseHttpProxy = false
+[INFO]: 2022-03-21 11:38:04 - UrlConnectednessTest Target Site https://baidu.com Speed: 203 ms, Status: true
+[INFO]: 2022-03-21 11:38:04 - Check Sub Supplier Start...
+[INFO]: 2022-03-21 11:38:06 - zimuku Check Alive = true, Speed = 1572 ms
+[INFO]: 2022-03-21 11:38:06 - xunlei Check Alive = true, Speed = 85 ms
+[INFO]: 2022-03-21 11:38:06 - shooter Check Alive = true, Speed = 300 ms
+[INFO]: 2022-03-21 11:38:07 - subhd Check Alive = true, Speed = 948 ms
+[INFO]: 2022-03-21 11:38:07 - Check Sub Supplier End
+[INFO]: 2022-03-21 11:38:07 - MovieFolder Index 0 -- /media/movie
+[INFO]: 2022-03-21 11:38:07 - SeriesPaths Index 0 -- /media/tv
+[INFO]: 2022-03-21 11:38:07 - PreDownloadProcess.Check() End
+[INFO]: 2022-03-21 11:38:07 - PreDownloadProcess.HotFix() Start...
+[INFO]: 2022-03-21 11:38:07 - If you have a lot of videos, it may take a lot of time, just wait...
+[INFO]: 2022-03-21 11:38:07 - PreDownloadProcess.HotFix() End
+[INFO]: 2022-03-21 11:38:07 - PreDownloadProcess.ChangeSubNameFormat() Start...
+[INFO]: 2022-03-21 11:38:07 - If you have a lot of videos, it may take a lot of time, just wait...
+[INFO]: 2022-03-21 11:38:07 - DesSubFormatter == LateTimeSubFormatter then skip process
+[INFO]: 2022-03-21 11:38:07 - PreDownloadProcess.ChangeSubNameFormat() End
+[INFO]: 2022-03-21 11:38:07 - PreDownloadProcess.ReloadBrowser() Start...
+[INFO]: 2022-03-21 11:38:07 - releaseAdblock start
+[INFO]: 2022-03-21 11:38:07 - releaseAdblock end
+[INFO]: 2022-03-21 11:38:18 - PreDownloadProcess.ReloadBrowser() End
+[INFO]: 2022-03-21 11:38:18 - PreDownloadProcess.Wait() Done.
+[INFO]: 2022-03-21 11:38:23 - ffmpeg version 3.4.8-0ubuntu0.2 Copyright (c) 2000-2020 the FFmpeg developers
+[INFO]: 2022-03-21 11:38:23 - Download One Started...
+[INFO]: 2022-03-21 11:38:23 - NeedRestoreFixTimeLineBK == false
+[INFO]: 2022-03-21 11:38:23 - Download Movie Sub Started...
+[INFO]: 2022-03-21 11:38:26 - Skip Black.Hawk.Down.2001.EXTENDED.REMASTERED.1080p.BluRay.x264.DTS-SWTYBLZ.mkv Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:38:29 - Skip Hacksaw.Ridge.2016.1080p.BluRay.x264-SPARKS.mkv Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:38:32 - Skip Spider-Man.No.Way.Home.2021.1080p.BluRay.x264.DTS-NOGRP.mkv Sub Download, because movie has sub and downloaded or aired more than 3 months
+[INFO]: 2022-03-21 11:38:35 - Skip 代号基亚斯：复活的鲁路修 (2019) 1080p AAC.mp4 Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:38:38 - Skip 你的名字 (2016) 720p DTSHD-MA.mkv Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:38:41 - Skip 信条(2020) 1080p DTSHD-MA.mkv Sub Download, because movie has sub and downloaded or aired more than 3 months
+[INFO]: 2022-03-21 11:38:44 - Skip 功夫熊猫 (2008) 1080p DTS.mkv Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:38:48 - Skip 功夫熊猫2 (2011) 1080p DTS.mkv Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:38:52 - Skip 功夫熊猫3 (2016) 1080p DTSHD-MA.mkv Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:38:54 - Skip 史密斯夫妇 (2005) 1080p DTS.mkv Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:38:58 - Skip 叶问4：完结篇 (2019) 1080p AAC.mp4 Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:39:01 - Skip 名侦探柯南：零的执行人 (2018) 1080p AAC.mp4 Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:39:04 - Skip 复仇者联盟4：终局之战 (2019) 1080p AC3.mkv Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:39:08 - Skip 天堂电影院 (1988) 1080p DTS.mkv Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:39:11 - Skip 寂静之地 (2018) 2160p Atmos.mkv Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:39:14 - Skip 我不是药神 (2018) 1080p EAC3.mkv Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:39:17 - Skip 机动战士高达NT (2018) 1080p EAC3.mkv Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:39:20 - Skip 杀人回忆 (2003) 1080p DTS.mkv Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:39:23 - Skip 源代码 (2011) 1080p Atmos.mkv Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:39:26 - Skip 空之境界 未来福音 (2013) 720p AAC.mp4 Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:39:30 - Skip 空之境界 未来福音 extra chorus (2013) 720p AAC.mp4 Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:39:33 - Skip 空之境界 第一章 俯瞰风景 (2007) 720p AAC.mp4 Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:39:36 - Skip 空之境界 第七章 杀人考察（后） (2009) 720p AAC.mp4 Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:39:39 - Skip 空之境界 第三章 痛觉残留 (2008) 720p AAC.mp4 Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:39:42 - Skip 空之境界 第二章 杀人考察（前） (2007) 720p AAC.mp4 Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:39:45 - Skip 空之境界 第五章 矛盾螺旋 (2008) 720p AAC.mp4 Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:39:49 - Skip 空之境界 第六章 忘却录音 (2008) 720p AAC.mp4 Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:39:52 - Skip 空之境界 第四章 伽蓝之洞 (2008) 720p AAC.mp4 Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:39:56 - Skip 空之境界 终章 空之境界 (2011) 720p AAC.mp4 Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:39:59 - Skip 美国队长2 (2014) 1080p DTS.mkv Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:40:02 - Skip 至暗时刻 (2017) 1080p Atmos.mkv Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:40:06 - Skip 萨利机长 (2016) 1080p Atmos.mkv Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:40:09 - Skip 蝙蝠侠大战超人：正义黎明 - Extended Edition (2016) 1080p AC3.mkv Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:40:12 - Skip 蝙蝠侠：黑暗骑士崛起 (2012) 1080p DTSHD-MA.mkv Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:40:16 - Skip 触不可及 (2011) 1080p DTS.mkv Sub Download, because movie has sub and published more than 2 years
+[INFO]: 2022-03-21 11:40:16 - --------------------------------------
+[INFO]: 2022-03-21 11:40:16 - successList 35
+[INFO]: 2022-03-21 11:40:16 - 0 /media/movie/复仇者联盟4：终局之战 (2019) 1080p AC3.mkv
+[INFO]: 2022-03-21 11:40:16 - 1 /media/movie/空之境界 第一章 俯瞰风景 (2007) 720p AAC.mp4
+[INFO]: 2022-03-21 11:40:16 - 2 /media/movie/空之境界 第四章 伽蓝之洞 (2008) 720p AAC.mp4
+[INFO]: 2022-03-21 11:40:16 - 3 /media/movie/空之境界 终章 空之境界 (2011) 720p AAC.mp4
+[INFO]: 2022-03-21 11:40:16 - 4 /media/movie/至暗时刻 (2017) 1080p Atmos.mkv
+[INFO]: 2022-03-21 11:40:16 - 5 /media/movie/代号基亚斯：复活的鲁路修 (2019) 1080p AAC.mp4
+[INFO]: 2022-03-21 11:40:16 - 6 /media/movie/功夫熊猫2 (2011) 1080p DTS.mkv
+[INFO]: 2022-03-21 11:40:16 - 7 /media/movie/天堂电影院 (1988) 1080p DTS.mkv
+[INFO]: 2022-03-21 11:40:16 - 8 /media/movie/你的名字 (2016) 720p DTSHD-MA.mkv
+[INFO]: 2022-03-21 11:40:16 - 9 /media/movie/源代码 (2011) 1080p Atmos.mkv
+[INFO]: 2022-03-21 11:40:16 - 10 /media/movie/寂静之地 (2018) 2160p Atmos.mkv
+[INFO]: 2022-03-21 11:40:16 - 11 /media/movie/空之境界 第五章 矛盾螺旋 (2008) 720p AAC.mp4
+[INFO]: 2022-03-21 11:40:16 - 12 /media/movie/Black.Hawk.Down.2001.EXTENDED.REMASTERED.1080p.BluRay.x264.DTS-SWTYBLZ.mkv
+[INFO]: 2022-03-21 11:40:16 - 13 /media/movie/Spider-Man.No.Way.Home.2021.1080p.BluRay.x264.DTS-NOGRP.mkv
+[INFO]: 2022-03-21 11:40:16 - 14 /media/movie/名侦探柯南：零的执行人 (2018) 1080p AAC.mp4
+[INFO]: 2022-03-21 11:40:16 - 15 /media/movie/空之境界 第六章 忘却录音 (2008) 720p AAC.mp4
+[INFO]: 2022-03-21 11:40:16 - 16 /media/movie/美国队长2 (2014) 1080p DTS.mkv
+[INFO]: 2022-03-21 11:40:16 - 17 /media/movie/萨利机长 (2016) 1080p Atmos.mkv
+[INFO]: 2022-03-21 11:40:16 - 18 /media/movie/触不可及 (2011) 1080p DTS.mkv
+[INFO]: 2022-03-21 11:40:16 - 19 /media/movie/Hacksaw.Ridge.2016.1080p.BluRay.x264-SPARKS.mkv
+[INFO]: 2022-03-21 11:40:16 - 20 /media/movie/功夫熊猫3 (2016) 1080p DTSHD-MA.mkv
+[INFO]: 2022-03-21 11:40:16 - 21 /media/movie/机动战士高达NT (2018) 1080p EAC3.mkv
+[INFO]: 2022-03-21 11:40:16 - 22 /media/movie/空之境界 第二章 杀人考察（前） (2007) 720p AAC.mp4
+[INFO]: 2022-03-21 11:40:16 - 23 /media/movie/叶问4：完结篇 (2019) 1080p AAC.mp4
+[INFO]: 2022-03-21 11:40:16 - 24 /media/movie/空之境界 未来福音 extra chorus (2013) 720p AAC.mp4
+[INFO]: 2022-03-21 11:40:16 - 25 /media/movie/空之境界 第七章 杀人考察（后） (2009) 720p AAC.mp4
+[INFO]: 2022-03-21 11:40:16 - 26 /media/movie/空之境界 未来福音 (2013) 720p AAC.mp4
+[INFO]: 2022-03-21 11:40:16 - 27 /media/movie/空之境界 第三章 痛觉残留 (2008) 720p AAC.mp4
+[INFO]: 2022-03-21 11:40:16 - 28 /media/movie/蝙蝠侠大战超人：正义黎明 - Extended Edition (2016) 1080p AC3.mkv
+[INFO]: 2022-03-21 11:40:16 - 29 /media/movie/蝙蝠侠：黑暗骑士崛起 (2012) 1080p DTSHD-MA.mkv
+[INFO]: 2022-03-21 11:40:16 - 30 /media/movie/信条(2020) 1080p DTSHD-MA.mkv
+[INFO]: 2022-03-21 11:40:16 - 31 /media/movie/史密斯夫妇 (2005) 1080p DTS.mkv
+[INFO]: 2022-03-21 11:40:16 - 32 /media/movie/杀人回忆 (2003) 1080p DTS.mkv
+[INFO]: 2022-03-21 11:40:16 - 33 /media/movie/功夫熊猫 (2008) 1080p DTS.mkv
+[INFO]: 2022-03-21 11:40:16 - 34 /media/movie/我不是药神 (2018) 1080p EAC3.mkv
+[INFO]: 2022-03-21 11:40:16 - --------------------------------------
+[INFO]: 2022-03-21 11:40:16 - noExecuteList 0
+[INFO]: 2022-03-21 11:40:16 - --------------------------------------
+[INFO]: 2022-03-21 11:40:16 - errorList 0
+[INFO]: 2022-03-21 11:40:16 - --------------------------------------
+[INFO]: 2022-03-21 11:40:16 - Download Movie Sub End...
+[INFO]: 2022-03-21 11:40:16 - Download Series Sub Started...
+[INFO]: 2022-03-21 11:40:16 - --------------------------------------
+[INFO]: 2022-03-21 11:40:16 - successList 35
+[INFO]: 2022-03-21 11:40:16 - 0 
+[INFO]: 2022-03-21 11:40:16 - 1 
+[INFO]: 2022-03-21 11:40:16 - 2 
+[INFO]: 2022-03-21 11:40:16 - 3 
+[INFO]: 2022-03-21 11:40:16 - 4 
+[INFO]: 2022-03-21 11:40:16 - 5 
+[INFO]: 2022-03-21 11:40:16 - 6 
+[INFO]: 2022-03-21 11:40:16 - 7 
+[INFO]: 2022-03-21 11:40:16 - 8 
+[INFO]: 2022-03-21 11:40:16 - 9 
+[INFO]: 2022-03-21 11:40:16 - 10 
+[INFO]: 2022-03-21 11:40:16 - 11 
+[INFO]: 2022-03-21 11:40:16 - 12 
+[INFO]: 2022-03-21 11:40:16 - 13 
+[INFO]: 2022-03-21 11:40:16 - 14 
+[INFO]: 2022-03-21 11:40:16 - 15 
+[INFO]: 2022-03-21 11:40:16 - 16 
+[INFO]: 2022-03-21 11:40:16 - 17 
+[INFO]: 2022-03-21 11:40:16 - 18 
+[INFO]: 2022-03-21 11:40:16 - 19 
+[INFO]: 2022-03-21 11:40:16 - 20 
+[INFO]: 2022-03-21 11:40:16 - 21 
+[INFO]: 2022-03-21 11:40:16 - 22 
+[INFO]: 2022-03-21 11:40:16 - 23 
+[INFO]: 2022-03-21 11:40:16 - 24 
+[INFO]: 2022-03-21 11:40:16 - 25 
+[INFO]: 2022-03-21 11:40:16 - 26 
+[INFO]: 2022-03-21 11:40:16 - 27 
+[INFO]: 2022-03-21 11:40:16 - 28 
+[INFO]: 2022-03-21 11:40:16 - 29 
+[INFO]: 2022-03-21 11:40:16 - 30 
+[INFO]: 2022-03-21 11:40:16 - 31 
+[INFO]: 2022-03-21 11:40:16 - 32 
+[INFO]: 2022-03-21 11:40:16 - 33 
+[INFO]: 2022-03-21 11:40:16 - 34 
+[INFO]: 2022-03-21 11:40:16 - --------------------------------------
+[INFO]: 2022-03-21 11:40:16 - noExecuteList 0
+[INFO]: 2022-03-21 11:40:16 - --------------------------------------
+[INFO]: 2022-03-21 11:40:16 - errorList 0
+[INFO]: 2022-03-21 11:40:16 - --------------------------------------
+[INFO]: 2022-03-21 11:40:16 - Download Series Sub End...
+[WARNING]: 2022-03-21 11:40:16 - CloseChrome exit status 1
+[INFO]: 2022-03-21 11:40:16 - CloseChrome
+[INFO]: 2022-03-21 11:40:16 - Will Scan SubFixCache Folder, Clear files that are more than 7 * 24 hours old
+[INFO]: 2022-03-21 11:40:16 - Download One End...
+[WARNING]: 2022-03-21 11:40:16 - CloseChrome exit status 1
+[INFO]: 2022-03-21 11:40:20 - rod clean up done.
+[INFO]: 2022-03-21 11:40:20 - ClearRodTmpRootFolder Done
